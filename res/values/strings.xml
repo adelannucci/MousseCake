@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MousseCake</string>
+    
+    <string name="action_sair">Sair</string>
+    <string name="action_conta">Conta</string>
+    <string name="action_pedidos">Pedidos</string>
+    <string name="action_menu">Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_mesa">Mesa</string>
+    <string name="str_comanda">Comanda</string>
+    <string name="str_entrar">Entrar</string>
+    
+    <string-array name="list_categorias">
+        <item>Bebidas</item>
+        <item>Entradas</item>
+        <item>Saladas</item>
+        <item>Pratos Principais</item>
+        <item>Porções</item>
+        <item>Bolos</item>
+    </string-array>
+    
+     <string-array name="list_bebidas">
+        <item>Água</item>
+        <item>Água com Gás</item>
+        <item>Coca Cola</item>
+        <item>Fanta Uva</item>
+        <item>Sprite</item>
+        <item>Itubaina</item>
+        <item>Suco de Laranja</item>
+        <item>Suco de Morango</item>
+    </string-array>
+
+</resources>

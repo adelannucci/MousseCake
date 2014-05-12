@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spiCategoria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:entries="@array/list_categorias" />
+
+    <ListView
+        android:id="@+id/listMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spiCategoria"
+        android:background="@drawable/menu_dropdown_panel_actionbarmarrom"
+        android:entries="@array/list_bebidas" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/listMenu" >
+
+        <ImageButton
+            android:id="@+id/imgBtnPrevios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imgBtnNext"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/action_menu"
+            android:src="@drawable/ic_action_previous_item" />
+
+        <ImageView
+            android:id="@+id/imgPrato"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/action_menu"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/imgBtnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/action_menu"
+            android:src="@drawable/ic_action_next_item" />
+    </RelativeLayout>
+
+</RelativeLayout>
