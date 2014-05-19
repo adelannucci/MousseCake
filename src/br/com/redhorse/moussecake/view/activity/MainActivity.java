@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import br.com.redhorse.moussecake.R;
+import br.com.redhorse.moussecake.view.fragment.ContaFragment;
 import br.com.redhorse.moussecake.view.fragment.MenuFragment;
 import br.com.redhorse.moussecake.view.fragment.PedidosFragment;
 
@@ -174,8 +175,8 @@ ActionBar.TabListener {
 				rootView = pedidosFragment.onCreateView(inflater, container, savedInstanceState);
 			}
 			else if(selectedTab == 3){
-				MenuFragment menuFragment = new MenuFragment();
-				rootView = menuFragment.onCreateView(inflater, container, savedInstanceState);
+				ContaFragment contaFragment = new ContaFragment();
+				rootView = contaFragment.onCreateView(inflater, container, savedInstanceState);
 			}
 			return rootView;
 		}

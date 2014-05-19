@@ -6,7 +6,7 @@
 
     <ListView
         android:id="@+id/listPedidos"
-        android:background="@drawable/menu_dropdown_panel_actionbarmarrom"
+        android:background="@drawable/menu_dropdown_panel_moussecakelight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ListView>

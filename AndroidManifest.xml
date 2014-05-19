@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Marrom" >
+        android:theme="@style/MousseCakeThemeLight" >
         <activity        
             android:name="br.com.redhorse.moussecake.view.activity.EntrarActivity"
             android:label="@string/app_name" >

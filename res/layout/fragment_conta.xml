@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtDividirPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_dividir"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/ckbGarcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDividirPor"
+        android:layout_below="@+id/txtDividirPor"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_porcentagem_garcom" />
+
+    <TextView
+        android:id="@+id/txtTotalConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ckbGarcom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_valor_conta"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonFecharConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTotalConta"
+        android:layout_alignRight="@+id/txtTotalConta"
+        android:layout_below="@+id/txtTotalConta"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_fechar_conta" />
+
+    <ListView
+        android:id="@+id/listPedidosDaConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonFecharConta"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/menu_dropdown_panel_moussecakelight" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDividirPor"
+        android:layout_alignBottom="@+id/txtDividirPor"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/txtDividirPor"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

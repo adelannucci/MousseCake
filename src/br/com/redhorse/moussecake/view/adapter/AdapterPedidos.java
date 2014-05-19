@@ -16,6 +16,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import br.com.redhorse.moussecake.R;
+import br.com.redhorse.moussecake.entities.Item;
 import br.com.redhorse.moussecake.entities.Pedido;
 
 /**
@@ -87,7 +88,7 @@ public class AdapterPedidos extends BaseAdapter {
 		//pega os dados da lista
 		//e define os valores nos itens.
 		Pedido item = mItens.get(position);
-		itemHolder.item.setText(item.getItem());
+		itemHolder.item.setText(item.getItem().getNome());
 
 		Drawable d;
 		Resources res;
@@ -99,7 +100,7 @@ public class AdapterPedidos extends BaseAdapter {
 		}
 		else
 		{
-			d = res.getDrawable(R.drawable.ic_action_cancel);
+			d = res.getDrawable(R.drawable.ic_action_time);
 		}
 
 		itemHolder.icon.setImageDrawable(d);
@@ -123,9 +124,9 @@ public class AdapterPedidos extends BaseAdapter {
 	public static List<Pedido> teste()
 	{
 		List<Pedido> list = new ArrayList<Pedido>();
-		list.add(new Pedido("Fanta Uva", false));
-		list.add(new Pedido("Itubaina", false));
-		list.add(new Pedido("Água", true));
+		list.add(new Pedido(new Item("Fanta Uva", "Refri", 2), false));
+		list.add(new Pedido(new Item("Itubaina", "Refri", 1.5), false));
+		list.add(new Pedido(new Item("Água", "Bebida Natural da fonte da sanasa", 0.5), true));
 		
 		return list;
 	}

@@ -19,7 +19,7 @@
         android:layout_height="265dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/spiCategoria"
-        android:background="@drawable/menu_dropdown_panel_actionbarmarrom"
+        android:background="@drawable/menu_dropdown_panel_moussecakelight"
         android:entries="@array/list_bebidas" >
     </ListView>
 

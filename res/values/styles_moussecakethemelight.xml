@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AutoCompleteTextViewMousseCakeThemeLight" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/moussecakethemelight_list_selector_holo_light</item>
+        <item name="android:background">@drawable/moussecakethemelight_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonMousseCakeThemeLight" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/moussecakethemelight_btn_default_holo_light</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ImageButtonMousseCakeThemeLight" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/moussecakethemelight_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerMousseCakeThemeLight" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/moussecakethemelight_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/moussecakethemelight_list_selector_holo_light</item>
+    </style>
+
+    <style name="TabMousseCakeThemeLight">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/moussecakethemelight_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextMousseCakeThemeLight">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="ProgressBarMousseCakeThemeLight" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/moussecakethemelight_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/moussecakethemelight_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="SeekBarMousseCakeThemeLight" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/moussecakethemelight_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/moussecakethemelight_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/moussecakethemelight_scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="RatingBarMousseCakeThemeLight" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/moussecakethemelight_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/moussecakethemelight_ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigMousseCakeThemeLight" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/moussecakethemelight_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/moussecakethemelight_ratingbar_holo_light</item>
+    </style>
+
+    <style name="RatingBarSmallMousseCakeThemeLight" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/moussecakethemelight_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/moussecakethemelight_ratingbar_small_holo_light</item>
+    </style>
+
+    <style name="ToggleMousseCakeThemeLight" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:background">@drawable/moussecakethemelight_btn_toggle_holo_light</item>
+    </style>
+
+    <style name="ActionBar.Solid.Moussecakelight" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_moussecakelight</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_moussecakelight</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_moussecakelight</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Moussecakelight</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Moussecakelight" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_moussecakelight</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Moussecakelight</item>
+    </style>
+
+    <style name="PopupMenu.Moussecakelight" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_moussecakelight</item>
+    </style>
+
+    <style name="DropDownListView.Moussecakelight" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_moussecakelight</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Moussecakelight" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_moussecakelight</item>
+    </style>
+
+    <style name="DropDownNav.Moussecakelight" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_moussecakelight</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_moussecakelight</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_moussecakelight</item>
+    </style>
+
+    <style name="ProgressBar.Moussecakelight" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_moussecakelight</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Moussecakelight" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_moussecakelight</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Moussecakelight.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Moussecakelight</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Moussecakelight</item>
+    </style>
+
+</resources>

@@ -9,7 +9,7 @@ package br.com.redhorse.moussecake.entities;
  */
 public class Pedido {
 	
-	private String item;
+	private Item item;
 	private boolean status;
 	
 	
@@ -18,7 +18,7 @@ public class Pedido {
 	 * @param item
 	 * @param status
 	 */
-	public Pedido(String item, boolean status) {
+	public Pedido(Item item, boolean status) {
 		super();
 		this.item = item;
 		this.status = status;
@@ -26,13 +26,13 @@ public class Pedido {
 	/**
 	 * @return the item
 	 */
-	public String getItem() {
+	public Item getItem() {
 		return item;
 	}
 	/**
 	 * @param item the item to set
 	 */
-	public void setItem(String item) {
+	public void setItem(Item item) {
 		this.item = item;
 	}
 	/**
