@@ -191,30 +191,35 @@ public final class R {
         public static final int tab_unselected_pressed_moussecakelight=0x7f02009e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0017;
+        public static final int action_settings=0x7f0a001c;
         public static final int buttonEntrar=0x7f0a0000;
-        public static final int buttonFecharConta=0x7f0a0007;
-        public static final int ckbGarcom=0x7f0a0005;
-        public static final int editText1=0x7f0a0009;
+        public static final int buttonFecharConta=0x7f0a0008;
+        public static final int checkBoxGarcom=0x7f0a000b;
         public static final int editTextComanda=0x7f0a0001;
+        public static final int editTextDividirPor=0x7f0a0004;
         public static final int editTextMesa=0x7f0a0002;
-        public static final int imgBtnNext=0x7f0a000e;
-        public static final int imgBtnPrevios=0x7f0a000d;
-        public static final int imgPrato=0x7f0a000f;
-        public static final int imgStatus=0x7f0a0016;
-        public static final int listMenu=0x7f0a000c;
-        public static final int listPedidos=0x7f0a0010;
-        public static final int listPedidosDaConta=0x7f0a0008;
+        public static final int imgBtnNext=0x7f0a0010;
+        public static final int imgBtnPrevios=0x7f0a000f;
+        public static final int imgPrato=0x7f0a0011;
+        public static final int imgStatus=0x7f0a0019;
+        public static final int listMenu=0x7f0a000e;
+        public static final int listPedidos=0x7f0a0012;
         public static final int pager=0x7f0a0003;
-        public static final int section_label=0x7f0a000a;
-        public static final int spiCategoria=0x7f0a000b;
-        public static final int textViewDescricaoItem=0x7f0a0013;
-        public static final int textViewItem=0x7f0a0015;
-        public static final int textViewNomeItem=0x7f0a0011;
-        public static final int textViewValor=0x7f0a0012;
-        public static final int textViewValorItem=0x7f0a0014;
-        public static final int txtDividirPor=0x7f0a0004;
-        public static final int txtTotalConta=0x7f0a0006;
+        public static final int section_label=0x7f0a000c;
+        public static final int spiCategoria=0x7f0a000d;
+        public static final int textViewDescricaoItem=0x7f0a0016;
+        public static final int textViewDividirPor=0x7f0a0005;
+        public static final int textViewItem=0x7f0a001a;
+        public static final int textViewItemValor=0x7f0a001b;
+        public static final int textViewNomeItem=0x7f0a0015;
+        public static final int textViewPreco=0x7f0a0017;
+        public static final int textViewPrecoItem=0x7f0a0018;
+        public static final int textViewSubTotal=0x7f0a0013;
+        public static final int textViewSubTotalValor=0x7f0a0014;
+        public static final int textViewTotalConta=0x7f0a0007;
+        public static final int textViewTotalDividido=0x7f0a000a;
+        public static final int textViewValorTotal=0x7f0a0006;
+        public static final int textViewValorTotalDividido=0x7f0a0009;
     }
     public static final class layout {
         public static final int activity_entrada=0x7f030000;
@@ -235,17 +240,18 @@ public final class R {
         public static final int action_pedidos=0x7f060003;
         public static final int action_sair=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060005;
-        public static final int str_comanda=0x7f060007;
-        public static final int str_dividir=0x7f06000c;
-        public static final int str_entrar=0x7f060008;
-        public static final int str_fechar_conta=0x7f060009;
-        public static final int str_mesa=0x7f060006;
-        public static final int str_nao=0x7f06000b;
-        public static final int str_porcentagem_garcom=0x7f06000d;
+        public static final int str_comanda=0x7f060006;
+        public static final int str_dividir=0x7f06000b;
+        public static final int str_entrar=0x7f060007;
+        public static final int str_fechar_conta=0x7f060008;
+        public static final int str_mesa=0x7f060005;
+        public static final int str_nao=0x7f06000a;
+        public static final int str_porcentagem_garcom=0x7f06000c;
         public static final int str_preco=0x7f06000f;
-        public static final int str_sim=0x7f06000a;
-        public static final int str_valor_conta=0x7f06000e;
+        public static final int str_sim=0x7f060009;
+        public static final int str_sub_total=0x7f060010;
+        public static final int str_valor_conta=0x7f06000d;
+        public static final int str_valor_conta_dividido=0x7f06000e;
     }
     public static final class style {
         public static final int ActionBar_Solid_Moussecakelight=0x7f08000e;

@@ -69,26 +69,19 @@ public class AdapterPedidos extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		AuxPedido itemHolder;
-		//se a view estiver nula (nunca criada), inflamos o layout nela.
 		if (convertView == null) {
-			//infla o layout para podermos pegar as views
 			convertView = mInflater.inflate(R.layout.item_pedido, null);
-
-			//cria um item de suporte para n??o precisarmos sempre
-			//inflar as mesmas informacoes
 			itemHolder = new AuxPedido(convertView);
 
 			//define os itens na view;
 			convertView.setTag(itemHolder);
 		} else {
-			//se a view j?? existe pega os itens.
 			itemHolder = (AuxPedido) convertView.getTag();
 		}
-
-		//pega os dados da lista
-		//e define os valores nos itens.
+		
 		Pedido item = mItens.get(position);
 		itemHolder.item.setText(item.getItem().getNome());
+		itemHolder.preco.setText("$ "+item.getItem().getPreco());
 
 		Drawable d;
 		Resources res;
@@ -112,12 +105,14 @@ public class AdapterPedidos extends BaseAdapter {
 	private class AuxPedido
 	{
 		public TextView item;
+		public TextView preco;
 		public ImageView icon;
 
 		public AuxPedido(View view)
 		{
 			icon = (ImageView) view.findViewById(R.id.imgStatus);
 			item = (TextView) view.findViewById(R.id.textViewItem);
+			preco = (TextView) view.findViewById(R.id.textViewItemValor);
 		}
 	}
 	

@@ -58,27 +58,16 @@ public class AdapterItem extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		AuxItem itemHolder;
-		//se a view estiver nula (nunca criada), inflamos o layout nela.
 		if (convertView == null) {
-			//infla o layout para podermos pegar as views
 			convertView = mInflater.inflate(R.layout.item_menu, null);
-
-			//cria um item de suporte para n??o precisarmos sempre
-			//inflar as mesmas informacoes
 			itemHolder = new AuxItem(convertView);
-
-			//define os itens na view;
 			convertView.setTag(itemHolder);
 		} else {
-			//se a view j?? existe pega os itens.
 			itemHolder = (AuxItem) convertView.getTag();
 		}
-
-		//pega os dados da lista
-		//e define os valores nos itens.
 		Item item = mItens.get(position);
 		itemHolder.nome.setText(item.getNome());
-		itemHolder.valor.setText("$ " + item.getPreco());
+		itemHolder.preco.setText("$ " + item.getPreco());
 		itemHolder.descricao.setText(item.getDescricao());
 
 		//retorna a view com as informa????es
@@ -88,14 +77,14 @@ public class AdapterItem extends BaseAdapter {
 	private class AuxItem
 	{
 		public TextView nome;
-		public TextView valor;
+		public TextView preco;
 		public TextView descricao;
 
 
 		public AuxItem(View view)
 		{
 			nome = (TextView) view.findViewById(R.id.textViewNomeItem);
-			valor = (TextView) view.findViewById(R.id.textViewValorItem);
+			preco = (TextView) view.findViewById(R.id.textViewPrecoItem);
 			descricao = (TextView) view.findViewById(R.id.textViewDescricaoItem);
 		}
 	}

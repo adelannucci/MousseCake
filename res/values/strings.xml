@@ -2,16 +2,14 @@
 <resources>
 
     <string name="app_name">MousseCake</string>
-    
     <string name="action_sair">Sair</string>
     <string name="action_conta">Conta</string>
     <string name="action_pedidos">Pedidos</string>
     <string name="action_menu">Menu</string>
-    <string name="hello_world">Hello world!</string>
     <string name="str_mesa">Mesa</string>
     <string name="str_comanda">Comanda</string>
     <string name="str_entrar">Entrar</string>
-    
+
     <string-array name="list_dividir">
         <item>1</item>
         <item>2</item>
@@ -26,7 +24,6 @@
         <item>11</item>
         <item>12</item>
     </string-array>
-    
     <string-array name="list_categorias">
         <item>Bebidas</item>
         <item>Entradas</item>
@@ -35,8 +32,7 @@
         <item>Porções</item>
         <item>Bolos</item>
     </string-array>
-    
-     <string-array name="list_bebidas">
+    <string-array name="list_bebidas">
         <item>Água</item>
         <item>Água com Gás</item>
         <item>Coca Cola</item>
@@ -46,12 +42,15 @@
         <item>Suco de Laranja</item>
         <item>Suco de Morango</item>
     </string-array>
-        <string name="str_fechar_conta">Fechar Conta</string>
-        <string name="str_sim">Sim</string>
-        <string name="str_nao">Não</string>
-        <string name="str_dividir">Dividir por</string>
-        <string name="str_porcentagem_garcom">10% para o Garçom</string>
-        <string name="str_valor_conta">Valor total da Conta</string>
-        <string name="str_preco">Preço</string>
+
+    <string name="str_fechar_conta">Fechar Conta</string>
+    <string name="str_sim">Sim</string>
+    <string name="str_nao">Não</string>
+    <string name="str_dividir">Dividir por</string>
+    <string name="str_porcentagem_garcom">10% para o Garçom</string>
+    <string name="str_valor_conta">Valor total</string>
+    <string name="str_valor_conta_dividido">Valor dividido</string>
+    <string name="str_preco">Preço</string>
+    <string name="str_sub_total">Valor Parcial</string>
 
 </resources>
