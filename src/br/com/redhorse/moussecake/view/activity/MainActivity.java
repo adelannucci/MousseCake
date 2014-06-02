@@ -178,8 +178,7 @@ ActionBar.TabListener {
 			int selectedTab = getArguments().getInt(ARG_SECTION_NUMBER);
 			if(selectedTab == 1)
 			{
-//				if(menuFragment != null)
-					menuFragment.setPedidos(pedidos);
+				menuFragment.setPedidos(pedidos);
 				if(pedidosFragment != null)
 					pedidosFragment.refresh(pedidos);
 				if(contaFragment != null)
@@ -187,8 +186,6 @@ ActionBar.TabListener {
 				rootView = menuFragment.onCreateView(inflater, container, savedInstanceState);	
 			}
 			else if(selectedTab == 2){
-//				if(menuFragment != null)
-//					menuFragment.setPedidos(pedidos);
 				if(pedidosFragment != null)
 					pedidosFragment.refresh(pedidos);
 				if(contaFragment != null)
@@ -196,8 +193,7 @@ ActionBar.TabListener {
 				rootView = pedidosFragment.onCreateView(inflater, container, savedInstanceState);		
 			}
 			else if(selectedTab == 3){
-//				if(menuFragment != null)
-//					menuFragment.setPedidos(pedidos);
+
 				if(pedidosFragment != null)
 					pedidosFragment.refresh(pedidos);
 				if(contaFragment != null)

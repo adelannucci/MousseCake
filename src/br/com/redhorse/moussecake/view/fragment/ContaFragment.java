@@ -33,19 +33,11 @@ public class ContaFragment extends Fragment{
 			Bundle savedInstanceState) {
 		view = inflater.inflate(R.layout.fragment_conta,container, false);
 		pessoas = (EditText) view.findViewById(R.id.editTextDividirPor);
-		//pessoas.setText("1");
 		gorjeta = (CheckBox) view.findViewById(R.id.checkBoxGarcom);
-		
 		valorTotal = (TextView) view.findViewById(R.id.textViewValorTotal);
-		//valorTotal.setText(String.format("R$ %.2f", 0.0));
-		
 		valorPorPessoa = (TextView) view.findViewById(R.id.textViewValorTotalDividido);
-		//valorPorPessoa.setText(String.format("R$ %.2f", 0.0));
-		
 		fecharConta = (Button) view.findViewById(R.id.buttonFecharConta);
-		fecharConta.setOnClickListener(fechar);
-		
-		
+		fecharConta.setOnClickListener(fechar);	
 		return view;
 	}
 	
@@ -61,7 +53,7 @@ public class ContaFragment extends Fragment{
 	{
 		this.pedidos = pedidos;
 				
-		if(view != null)
+		if(view != null && this.pedidos != null && gorjeta != null && pessoas != null && valorTotal != null && valorPorPessoa != null)
 		{
 			total = 0;
 			
@@ -75,10 +67,14 @@ public class ContaFragment extends Fragment{
 				total *= 1.1;
 			}
 			
-			qtdPessoas = Integer.parseInt(pessoas.getText().toString());
+			try {
+				qtdPessoas = Integer.parseInt(pessoas.getText().toString());
+			} catch (Exception e) {
+				pessoas.setText("1");
+				qtdPessoas = 1;
+			}
 			
-			totalPorPessoa = total/qtdPessoas;
-			
+			totalPorPessoa = total/qtdPessoas;	
 			valorTotal.setText(String.format("R$ %.2f", total));
 			valorPorPessoa.setText(String.format("R$ %.2f", totalPorPessoa));
 		}
