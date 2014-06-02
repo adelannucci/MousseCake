@@ -1,5 +1,7 @@
 package br.com.redhorse.moussecake.view.activity;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 import android.app.ActionBar;
@@ -15,12 +17,18 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import br.com.redhorse.moussecake.R;
+import br.com.redhorse.moussecake.entities.Pedido;
 import br.com.redhorse.moussecake.view.fragment.ContaFragment;
 import br.com.redhorse.moussecake.view.fragment.MenuFragment;
 import br.com.redhorse.moussecake.view.fragment.PedidosFragment;
 
 public class MainActivity extends FragmentActivity implements
 ActionBar.TabListener {
+	
+	private static List<Pedido> pedidos;
+	private static MenuFragment menuFragment;
+	private static PedidosFragment pedidosFragment;
+	private static ContaFragment contaFragment;
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -41,11 +49,14 @@ ActionBar.TabListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
 		// Set up the action bar.
+		pedidos = new ArrayList<Pedido>();
+		menuFragment = new MenuFragment();
+		pedidosFragment = new PedidosFragment();
+		contaFragment = new ContaFragment();
 		final ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the app.
 		mSectionsPagerAdapter = new SectionsPagerAdapter(
@@ -167,16 +178,32 @@ ActionBar.TabListener {
 			int selectedTab = getArguments().getInt(ARG_SECTION_NUMBER);
 			if(selectedTab == 1)
 			{
-				MenuFragment menuFragment = new MenuFragment();
-				rootView = menuFragment.onCreateView(inflater, container, savedInstanceState);
+//				if(menuFragment != null)
+					menuFragment.setPedidos(pedidos);
+				if(pedidosFragment != null)
+					pedidosFragment.refresh(pedidos);
+				if(contaFragment != null)
+					contaFragment.refresh(pedidos);
+				rootView = menuFragment.onCreateView(inflater, container, savedInstanceState);	
 			}
 			else if(selectedTab == 2){
-				PedidosFragment pedidosFragment = new PedidosFragment();
-				rootView = pedidosFragment.onCreateView(inflater, container, savedInstanceState);
+//				if(menuFragment != null)
+//					menuFragment.setPedidos(pedidos);
+				if(pedidosFragment != null)
+					pedidosFragment.refresh(pedidos);
+				if(contaFragment != null)
+					contaFragment.refresh(pedidos);
+				rootView = pedidosFragment.onCreateView(inflater, container, savedInstanceState);		
 			}
 			else if(selectedTab == 3){
-				ContaFragment contaFragment = new ContaFragment();
+//				if(menuFragment != null)
+//					menuFragment.setPedidos(pedidos);
+				if(pedidosFragment != null)
+					pedidosFragment.refresh(pedidos);
+				if(contaFragment != null)
+					contaFragment.refresh(pedidos);
 				rootView = contaFragment.onCreateView(inflater, container, savedInstanceState);
+
 			}
 			return rootView;
 		}

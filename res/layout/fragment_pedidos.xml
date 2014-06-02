@@ -3,19 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1" >
+    android:background="@drawable/mousse_cake_iguatemi_campinas_2" 
+    android:weightSum="10" >
 
     <LinearLayout
         android:layout_width="fill_parent"
      	android:layout_height="wrap_content"
-        android:layout_weight="0.7"
+        android:layout_weight="10"
         android:orientation="vertical" >
 
         <ListView
             android:id="@+id/listPedidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.8"
             android:background="@drawable/menu_dropdown_panel_moussecakelight" >
         </ListView>
     </LinearLayout>
@@ -23,26 +23,30 @@
     <LinearLayout
         android:layout_width="fill_parent"
      	android:layout_height="wrap_content"
-        android:layout_weight="0.2"
+        android:layout_weight="0"
+        android:background="@drawable/menu_dropdown_panel_moussecakelight"
         android:orientation="horizontal" >
 
         <TextView
             android:id="@+id/textViewSubTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="right|center_vertical"
             android:layout_marginLeft="10dp"
+            android:gravity="left"
             android:text="@string/str_sub_total"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-        
+
         <TextView
             android:id="@+id/textViewSubTotalValor"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
             android:layout_marginLeft="20dp"
-            android:layout_gravity="center_vertical"
+            android:gravity="left"
             android:text="$4.00"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
     </LinearLayout>
 
 </LinearLayout>

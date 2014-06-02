@@ -1,6 +1,5 @@
 package br.com.redhorse.moussecake.view.adapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
@@ -67,10 +66,9 @@ public class AdapterItem extends BaseAdapter {
 		}
 		Item item = mItens.get(position);
 		itemHolder.nome.setText(item.getNome());
-		itemHolder.preco.setText("$ " + item.getPreco());
 		itemHolder.descricao.setText(item.getDescricao());
-
-		//retorna a view com as informa????es
+		itemHolder.preco.setText(String.format("R$ %.2f", item.getPreco()));
+		
 		return convertView;
 	}
 
@@ -84,24 +82,9 @@ public class AdapterItem extends BaseAdapter {
 		public AuxItem(View view)
 		{
 			nome = (TextView) view.findViewById(R.id.textViewNomeItem);
-			preco = (TextView) view.findViewById(R.id.textViewPrecoItem);
 			descricao = (TextView) view.findViewById(R.id.textViewDescricaoItem);
+			preco = (TextView) view.findViewById(R.id.textViewPrecoItem);
+			
 		}
-	}
-	
-	public static List<Item> teste()
-	{
-		List<Item> list = new ArrayList<Item>();
-		list.add(new Item("Suco de Laranja", "Suco natural", 4.5));
-		list.add(new Item("Suco de Morango", "Suco natural com água", 4.5));
-		list.add(new Item("Suco de Abacaxi com Hortelâ", "Suco natural com água", 4.5));
-		list.add(new Item("Coca Cola", "Refri", 4));
-		list.add(new Item("Fanta Uva", "Refri", 2));
-		list.add(new Item("Sprite", "Refri", 2));
-		list.add(new Item("Itubaina", "Refri", 1.5));
-		list.add(new Item("Água", "Bebida Natural da fonte da sanasa", 0.5));
-		
-		
-		return list;
 	}
 }

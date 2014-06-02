@@ -11,35 +11,35 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="15dp"
         android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewPrecoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewDescricaoItem"
+        android:layout_marginRight="20dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPrecoItem"
+        android:layout_alignBottom="@+id/textViewPrecoItem"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/textViewPrecoItem"
+        android:text="@string/str_preco"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textViewDescricaoItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/textViewNomeItem"
         android:layout_below="@+id/textViewNomeItem"
-        android:layout_marginLeft="15dp"
-        android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textViewPreco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textViewDescricaoItem"
-        android:layout_marginLeft="15dp"
-        android:text="@string/str_preco"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textViewPrecoItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewDescricaoItem"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@+id/textViewPreco"
         android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 

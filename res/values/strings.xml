@@ -52,5 +52,7 @@
     <string name="str_valor_conta_dividido">Valor dividido</string>
     <string name="str_preco">Preço</string>
     <string name="str_sub_total">Valor Parcial</string>
+    <string name="str_cancelar">Cancelar</string>
+    <string name="str_confirmar">Confirmar</string>
 
 </resources>

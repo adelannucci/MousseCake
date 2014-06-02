@@ -9,10 +9,11 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewDividirPor"
         android:layout_alignBottom="@+id/textViewDividirPor"
-        android:layout_marginLeft="32dp"
-        android:layout_toRightOf="@+id/textViewDividirPor"
+        android:layout_alignRight="@+id/checkBoxGarcom"
+        android:layout_toRightOf="@+id/buttonFecharConta"
         android:ems="10"
-        android:inputType="number" >
+        android:inputType="number"
+        android:text="1" >
 
         <requestFocus />
     </EditText>
@@ -24,7 +25,7 @@
         android:layout_alignBaseline="@+id/textViewTotalConta"
         android:layout_alignBottom="@+id/textViewTotalConta"
         android:layout_toRightOf="@+id/buttonFecharConta"
-        android:text="$ 4.0"
+        android:text="R$ 0.00"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -34,7 +35,7 @@
         android:layout_alignBaseline="@+id/textViewTotalDividido"
         android:layout_alignBottom="@+id/textViewTotalDividido"
         android:layout_alignRight="@+id/textViewValorTotal"
-        android:text="$ 1.0"
+        android:text="R$ 0.00"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <CheckBox
@@ -42,20 +43,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textViewDividirPor"
+        android:layout_alignRight="@+id/textViewValorTotal"
         android:layout_below="@+id/textViewDividirPor"
         android:layout_marginTop="20dp"
+        android:selectAllOnFocus="true"
         android:text="@string/str_porcentagem_garcom" />
-
-    <TextView
-        android:id="@+id/textViewTotalConta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBoxGarcom"
-        android:layout_below="@+id/checkBoxGarcom"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/str_valor_conta"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textViewTotalDividido"
@@ -77,12 +69,23 @@
         android:text="@string/str_fechar_conta" />
 
     <TextView
+        android:id="@+id/textViewTotalConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxGarcom"
+        android:layout_below="@+id/checkBoxGarcom"
+        android:layout_marginTop="21dp"
+        android:text="@string/str_valor_conta"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/textViewDividirPor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp"
-        android:layout_toLeftOf="@+id/buttonFecharConta"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
         android:text="@string/str_dividir"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

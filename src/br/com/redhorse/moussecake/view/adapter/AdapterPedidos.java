@@ -81,7 +81,8 @@ public class AdapterPedidos extends BaseAdapter {
 		
 		Pedido item = mItens.get(position);
 		itemHolder.item.setText(item.getItem().getNome());
-		itemHolder.preco.setText("$ "+item.getItem().getPreco());
+		
+		itemHolder.preco.setText(String.format("R$ %.2f", item.getItem().getPreco()));
 
 		Drawable d;
 		Resources res;
